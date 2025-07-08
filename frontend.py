@@ -7,6 +7,53 @@ st.title("Insurance Premium category Predictor")
 st.markdown("Enter your details below :")
 
 
+st.set_page_config(
+    page_title="Insurance Premium Predictor",
+    page_icon="💡",
+    layout="centered"
+)
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #0f000a;
+        background-image: url("http://www.transparenttextures.com/patterns/black-thread-light.png");
+        background-size: auto;
+    }
+
+    .block-container {
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    label, .stTextInput > div > div > input,
+    .stNumberInput > div > div > input,
+    .stSelectbox > div > div > div {
+        color: #ffffff !important;
+    }
+
+    .stButton > button {
+        background-color: #e91e63;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .stButton > button:hover {
+        background-color: #ad1457;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        color: #ffffff;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 age=st.number_input("Age",min_value=1,max_value=119,value=30)
 weight=st.number_input("Weight (kg)",min_value=1.0,max_value=120.0,value=65.0)
 height=st.number_input("Height (m)",min_value=1.0,value=1.7)
