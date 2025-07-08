@@ -1,7 +1,7 @@
 import streamlit as st 
 import requests
 
-API_url= "http://localhost:8000/predict"
+API_url= "https://insurance-predictor-app-nxdp.onrender.com/predict"
 st.title("Insurance Premium category Predictor")
 
 st.markdown("Enter your details below :")
