@@ -1,5 +1,5 @@
+scikit-learn==1.6.1
 fastapi
 uvicorn
 pandas
-scikit-learn
 pydantic
